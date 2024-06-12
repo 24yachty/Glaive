@@ -1,0 +1,211 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    font-size: 16px;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #ccc;
+}
+
+header {
+    background-color: #343a40;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+section {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+}
+
+.w3-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-details {
+    flex: 1;
+}
+
+.contact-image {
+    flex: 1;
+}
+
+.carousel-inner img {
+    border-radius: 15px;
+}
+ 
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+
+/* Apply animations */
+header, section {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.contact-details {
+    flex: 1;
+    animation: slideInRight 1s ease-in-out;
+}
+
+.contact-image {
+    flex: 1;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+/* Dark mode and light mode */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    font-size: 16px;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #ccc;
+}
+
+header {
+    background-color: #343a40;
+    transition: background-color 0.5s;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+section {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.w3-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-details {
+    flex: 1;
+}
+
+.contact-image {
+    flex: 1;
+}
+
+.carousel-inner img {
+    border-radius: 15px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-inner img:hover {
+    transform: scale(1.05);
+}

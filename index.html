@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>GDK Label</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="bg-secondary text-white p-3">
+        <div class="container">
+            <h1 class="text-center">GDK LABEL</h1>
+            <nav>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Conditions</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Artistes</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Musique</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mt-4">
+        <!-- Dark Mode and Light Mode Buttons -->
+        <div class="text-center mb-4">
+            <button type="button" class="btn btn-light" onclick="lightMode()">Light</button>
+            <button type="button" class="btn btn-dark" onclick="darkMode()">Dark</button>
+        </div>
+
+        <section>
+            <h2 class="text-center">GDK : Votre label de production et d'arrangement</h2>
+            <p>Vous êtes un artiste passionné avec des mélodies et des textes qui bouillonnent en vous ? Vous rêvez de voir vos créations prendre vie et toucher un large public ? GDK, votre label de production et d'arrangement, est là pour vous accompagner dans cette aventure musicale.</p>
+            <p>Au sein de GDK, vous trouverez une équipe de producteurs et d'arrangeurs talentueux et expérimentés, animés par une passion commune : la musique. Notre mission ? Vous aider à concrétiser votre vision artistique et à révéler tout le potentiel de vos compositions.</p>
+            <p>Que vous soyez un auteur-compositeur-interprète solo, un groupe de rock, un ensemble de jazz ou tout autre type d'artiste, GDK s'adapte à vos besoins et à votre style musical. Nous proposons une large gamme de services sur mesure, parmi lesquels :</p>
+            <ul>
+                <li>Production musicale : De la maquette à l'album complet, nous vous accompagnons dans toutes les étapes de la production de votre musique.</li>
+                <li>Arrangement musical : Sublimez vos compositions grâce à nos arrangements sur mesure, qui mettront en valeur vos mélodies et vos textes.</li>
+                <li>Enregistrement : Immortalisez vos performances dans notre studio d'enregistrement professionnel, doté d'équipements de pointe.</li>
+                <li>Mixage et mastering : Donnez à votre musique une sonorité impeccable grâce à notre expertise en mixage et mastering.</li>
+                <li>Promotion et distribution : Faites connaître votre musique au plus grand nombre grâce à nos stratégies de promotion et de distribution personnalisées.</li>
+            </ul>
+            <p>Chez GDK, nous croyons en la collaboration étroite avec nos artistes. Nous prenons le temps de comprendre vos aspirations musicales et de vous proposer des solutions adaptées à vos besoins et à votre budget.</p>
+            <p>N'attendez plus pour concrétiser vos rêves musicaux ! Contactez-nous dès aujourd'hui pour une consultation gratuite et laissez-nous vous guider vers le succès.</p>
+        </section>
+
+        <section class="mt-5">
+            <h2 class="text-center">Nos artistes</h2>
+            <p>Chez GDK, nous sommes fiers de représenter une communauté d'artistes talentueux et passionnés. Chacun d'entre eux apporte sa propre voix unique et son style inimitable à la scène musicale.</p>
+            <p>Que vous soyez amateur de rock énergique, de pop entraînante, de jazz envoûtant ou de tout autre genre musical, vous trouverez chez GDK des artistes qui sauront vous captiver.</p>
+            <p>Nous vous invitons à découvrir nos artistes et à plonger dans leurs univers musicaux riches et variés. Laissez-vous transporter par leurs mélodies et leurs textes, et laissez-vous toucher par leur passion et leur talent.</p>
+            <p>N'hésitez pas à suivre nos artistes sur les réseaux sociaux pour rester informés de leurs actualités et de leurs prochains concerts.</p>
+        </section>
+
+        <section class="mt-5">
+            <div class="w3-container" id="contact">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Contact</h2>
+                        <p><i class="fa fa-map-marker" style="width:30px"></i> TOGO, Lomé</p>
+                        <p><i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515</p>
+                        <p><i class="fa fa-envelope" style="width:30px"></i> Email: mail@mail.com</p>
+                        <p>Des questions? Allez-y, demandez-leur :</p>
+                        <form action="/action_page.php" target="_blank">
+                            <div class="mb-3">
+                                <input class="form-control" type="text" placeholder="Name" required name="Name">
+                            </div>
+                            <div class="mb-3">
+                                <input class="form-control" type="text" placeholder="Email" required name="Email">
+                            </div>
+                            <div class="mb-3">
+                                <input class="form-control" type="text" placeholder="Message" required name="Message">
+                            </div>
+                            <button type="submit" class="btn btn-success">Send a Message</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="gdk.jpg" class="d-block w-100" alt="Image 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="gdk1.jpg" class="d-block w-100" alt="Image 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="gdk2.jpg" class="d-block w-100" alt="Image 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="gdk3.jpg" class="d-block w-100" alt="Image 4">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center p-3">
+        <p>&copy; 2024 Davidoofficiel</p>
+        <a href="https://www.facebook.com/" target="_blank" class="text-white mx-2">
+            <i class="fa fa-facebook" style="font-size:30px;"></i>
+        </a>
+        <a href="https://twitter.com/?lang=en" target="_blank" class="text-white mx-2">
+            <i class="fa fa-twitter" style="font-size:30px;"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" class="text-white mx-2">
+            <i class="fa fa-instagram" style="font-size:30px;"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" class="text-white mx-2">
+            <i class="fa fa-youtube" style="font-size:30px;"></i>
+        </a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
